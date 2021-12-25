@@ -1,0 +1,107 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User Navigates to the login page",
+            "match": {
+              "location": "com.hrms.stepDefinitions.LoginSteps.user_navigates_to_the_login_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-25T15:51:28.018Z",
+        "before": [
+          {
+            "result": {
+              "duration": 22281000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.hrms.stepDefinitions.Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 33,
+        "name": "verify the login function with invalid Data",
+        "description": "",
+        "id": "login-functionality;verify-the-login-function-with-invalid-data",
+        "after": [
+          {
+            "result": {
+              "duration": 1449000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.hrms.stepDefinitions.Hooks.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5501000000,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "enters enters the invalid Cerdentails and click on login and verify the error",
+            "match": {
+              "location": "com.hrms.stepDefinitions.LoginSteps.enters_enters_the_invalid_cerdentails_and_click_on_login_and_verify_the_error(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "password",
+                  "errorMessage"
+                ]
+              },
+              {
+                "cells": [
+                  "admin123",
+                  "Admin123",
+                  "Invalid credentials"
+                ]
+              },
+              {
+                "cells": [
+                  "Admin",
+                  "Admin123657",
+                  "Invalid credentials"
+                ]
+              }
+            ],
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DataTable"
+          }
+        ]
+      }
+    ],
+    "name": "Login Functionality",
+    "description": "",
+    "id": "login-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/Login.feature",
+    "tags": []
+  }
+]
